@@ -310,15 +310,184 @@
 //}
 
 
+//#include<stdio.h>u5
+//int main(){
+//	//----------------------static input------------------------------
+////	char string[100]="Abhishek singh";
+////	printf("%s",string);
+//
+//	//------------------------dynamic input----------------------------
+//	char string[100];
+//	scanf("%[^\n]%*c",&string);
+//	printf("%s",string);	
+//	return 0;
+//}
+
+
+
+
+
+
+//----------------------------------UNIT -2 --------------------------------------------------------------
+
+//-----15/2/2023--------LECTURE Day5---------Day 5------LECTURE Day 5---------LECTURE Day 5------LECTURE Day 5------LECTURE Day 5----
+
+
+//#include <stdio.h>
+//int main(){
+//	printf("Value of a is ="%d,a);
+//	int a=5;
+//	return 0;
+//}
+//---> OUTPUT ERROR (programs are executed sequentially by default)
+
+
 #include<stdio.h>
+//int main(){
+//	int a;
+//	printf("Enter the number: ");
+//	scanf("%d",&a);
+//	if (a%5==0){
+//		printf("%d divisible by 5",a);
+//	}else{
+//		printf("%d not divisible by 5",a);
+//	}	
+//
+////	switch (6-a){
+////		case 0:
+////			printf("Zero");
+////			break;
+////		case 0:
+////			printf("Zero");
+////			break;
+////		case 0:
+////			printf("Zero");
+////			break;
+////	}	
+//	return 0;
+//}
+
+
+//int main() {
+//    int a, b, c;
+//    printf("Enter three numbers: ");
+//    scanf("%d", &a);
+//    scanf("%d", &b);
+//    scanf("%d", &c);
+//
+//    if (a > b && a > c) {
+//        printf("%d is the greater than %d and %d.", a, b, c);
+//    } else if (b > c && b > a) {
+//        printf("%d is the greater than %d and %d.", b,a, c);
+//    } else if (c > a && c > b) {
+//        printf("%d is the greater than %d and %d.", c, a, b);
+//    } else {
+//        printf("All three numbers are equal.");
+//    }
+//    return 0;
+//}
+
+
+//int main(){
+//	int mks,p,m,c;
+//	printf("Enter Python marks:");
+//	scanf("%d",&p);
+//	printf("Enter Maths marks: ");
+//	scanf("%d",&m);
+//	printf("Enter Chem marks: ");
+//	scanf("%d",&c);
+//	mks = (p+m+c)/3;
+//	printf("Average is %d ",mks);
+//	
+//	if (mks>90){
+//		printf("Grade O");
+//	}else if(mks>80&&mks<=90){
+//		printf("Grade A");
+//	}else if(mks>70&&mks<=80){
+//		printf("Grade B");
+//	}else if(mks>60&&mks<=70){
+//		printf("Grade c");
+//	}else if(mks>50&&mks<=60){
+//		printf("Grade D");
+//	}else{
+//		printf("Reappear");
+//	}
+//}
+
+
+//int main(){
+//	
+//	int day;
+//	printf("Enter a number of day between 0-6: ");
+//	scanf("%d",&day);
+//	switch (day){
+//		case 0:
+//			printf("Sunday");
+//			break;
+//		case 1:
+//			printf("Monday");
+//			break;
+//		case 2:
+//			printf("Tuesday");
+//			break;
+//		case 3:
+//			printf("Wednesday");
+//			break; 
+//		case 4:
+//			printf("Thursday");
+//			break;
+//		case 5:
+//			printf("Friday");
+//			break;
+//		case 6:
+//			printf("Saturday");
+//			break;
+//		default:
+//			printf("Invalid");	
+//	}	
+//	return 0;
+//}
+
+
+
+
+
+//int main(){
+//	int x=5;
+//	if(x<1){
+//		printf("hello");
+//	}
+//	if(x==5){
+//		printf("hi");
+//	}else{
+//		printf("no");
+//	}
+//	return 0;
+//}
+
+//int main(){
+//	int x=0;
+//	if(x==1)
+//		if(x>=0)
+//			printf("true\n");
+//		else
+//			printf("false\n");
+//	
+//	return 0;
+//}
+
 int main(){
-	//----------------------static input------------------------------
-//	char string[100]="Abhishek singh";
-//	printf("%s",string);
-	//------------------------dynamic input----------------------------
-	char string[100];
-	scanf("%[^\n]%*c",&string);
-	printf("%s",string);	
+	int ch=97;
+	switch (ch){
+		case 'a':
+			printf("asdf");
+			printf("1");
+		case 97:
+			printf("asdfsdf");
+	}
 	return 0;
 }
+
+
+
 
