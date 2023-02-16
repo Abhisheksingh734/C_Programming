@@ -476,18 +476,197 @@
 //	return 0;
 //}
 
-int main(){
-	int ch=97;
-	switch (ch){
-		case 'a':
-			printf("asdf");
-			printf("1");
-		case 97:
-			printf("asdfsdf");
+//int main(){
+//	int ch=97;
+//	switch (ch){
+//		case 'a':
+//			printf("asdf");
+//			printf("1");
+//		case 97:
+//			printf("asdfsdf");
+//	}
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int a,b;
+//    float c,d;
+//    
+//    scanf("%d%d",&a,&b);
+//    printf("%d %d",(a+b),(a-b));
+//    scanf("%f %f",&c,&d);
+//    printf("%.1f %.1f",(c+d),(c-d));
+//    
+//    return 0;
+//}
+
+
+//int main(){
+//	
+//	int num;
+//	printf("Enter a number of month: ");
+//	scanf("%d",&num);
+//	switch (num){
+//		case 1:
+//			printf("Janunary");
+//			break;
+//		case 2:
+//			printf("February");
+//			break;
+//		case 3:
+//			printf("March");
+//			break;
+//		case 4:
+//			printf("April");
+//			break; 
+//		case 5:
+//			printf("May");
+//			break;
+//		case 6:
+//			printf("June");
+//			break;
+//		case 7:
+//			printf("July");
+//			break;
+//		case 8:
+//			printf("August");
+//			break;
+//		case 9:
+//			printf("September");
+//			break;
+//		case 10:
+//			printf("October");
+//			break;
+//		case 11:
+//			printf("November");
+//			break;
+//		case 12:
+//			printf("December");
+//			break;
+//		default:
+//			printf("Invalid Input");
+//	return 0;	
+//	}
+//}
+
+
+
+
+//---------------------------------------------------CALCULATOR-------------------------------------------------------------------------------
+#include<stdio.h>
+//int main(){
+//	int a,b;
+//	char choice;
+//	float result;
+//	
+//	printf("Press '+' for Addition\nPress '-' for Subtraction\nPress '/' for Division\nPress '*' for Multiplication\n");
+//	printf("Enter your choice: ");
+//	scanf("%c",&choice);
+//	printf("Enter a: ");
+//	scanf("%d",&a);
+//	printf("Enter b: ");
+//	scanf("%d",&b);
+//	
+//	switch (choice){
+//		case '+':
+//			result = a+b;
+//			printf("Addition of %d and %d is: %.1f",a,b,result);
+//			break;
+//		case '-':
+//			result= a-b;
+//			printf("Subtraction of %d and %d is: %.1f",a,b,result);
+//			break;
+//		case '/':
+//			if(b==0){
+//				printf("B must be a non Zero");
+//				break;
+//			}else{
+//				result = a/b;
+//				printf("Division of %d and %d is: %.1f",a,b,result);
+//				break;
+//			}		
+//		case '*':
+//			result = a*b;
+//			printf("Multiplication of %d and %d is: %.1f",a,b,result);
+//			break;
+//		default:
+//			printf("Invalid input");
+//	}
+//}
+
+
+//
+//int main(){
+//	char c;
+//	printf("Enter alphabet: ");
+//	scanf("%c",&c);
+//	
+//	switch(c){
+//		case 'a':
+//			printf("%c is vowel",c);
+//			break;
+//		case 'e':
+//			printf("%c is vowel",c);
+//			break;
+//		case 'i':
+//			printf("%c is vowel",c);
+//			break;
+//		case 'o':
+//			printf("%c is vowel",c);
+//			break;
+//		case 'u':
+//			printf("%c is vowel",c);
+//			break;
+//		default:
+//			printf("%c is consonant",c);
+//	}
+//	return 0;
+//}
+
+
+
+int main()
+{
+	int a,b;
+    float c,d;
+    
+    if(scanf("%d%d",&a,&b)!=2){
+    	printf("Invalid input");
 	}
-	return 0;
+    else if(scanf("%f %f",&c,&d)!=2){
+    	printf("Invalid input");
+	}else{
+		printf("%d %d\n",(a+b),(a*b));
+    	printf("%.1f %.1f",(c+d),(c*d));
+	}
+    
+    return 0;
+    
 }
 
-
-
-
+#include <stdio.h>
+//
+//int main() {
+//    int length, width;
+//    float price, tax_rate;
+//    
+//    // read in inputs
+//    printf("Enter length and width of rectangle: ");
+//    if (scanf("%d%d", &length, &width) != 2) {
+//        printf("Error: invalid input\n");
+//        return 1;
+//    }
+//    printf("Enter price and tax rate: ");
+//    if (scanf("%f%f", &price, &tax_rate) != 2) {
+//        printf("Error: invalid input\n");
+//        return 1;
+//    }
+//    
+//    // compute and print results
+//    printf("Area: %d square units\nPerimeter: %d units\n", (length * width), (2 * (length + width)));
+//    printf("Total price: $%.2f\nTotal tax: $%.2f\n", (price * (1 + tax_rate)), (price * tax_rate));
+//    
+//    return 0;
+//}
