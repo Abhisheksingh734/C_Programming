@@ -627,26 +627,27 @@
 
 
 
-int main()
-{
-	int a,b;
-    float c,d;
-    
-    if(scanf("%d%d",&a,&b)!=2){
-    	printf("Invalid input");
-	}
-    else if(scanf("%f %f",&c,&d)!=2){
-    	printf("Invalid input");
-	}else{
-		printf("%d %d\n",(a+b),(a*b));
-    	printf("%.1f %.1f",(c+d),(c*d));
-	}
-    
-    return 0;
-    
-}
+//int main()
+//{
+//	int a,b;
+//    float c,d;
+//    
+//    if(scanf("%d%d",&a,&b)!=2){
+//    	printf("Invalid input");
+//	}
+//    else if(scanf("%f %f",&c,&d)!=2){
+//    	printf("Invalid input");
+//	}else{
+//		printf("%d %d\n",(a+b),(a*b));
+//    	printf("%.1f %.1f",(c+d),(c*d));
+//	}
+//    
+//    return 0;
+//    
+//}
 
 #include <stdio.h>
+#include <conio.h>
 //
 //int main() {
 //    int length, width;
@@ -670,3 +671,94 @@ int main()
 //    
 //    return 0;
 //}
+
+
+
+//--------------------------GREATEST NUMBER --------------------------------------------------------------------------
+//int main(){
+//	int a,b,c,max;
+//	printf("Enter three numbers seperated with space: ");
+//	scanf("%d%d%d",&a,&b,&c);
+//	
+//	max = a;
+//	if(b>max){
+//		max=b;
+//	}
+//	if(c>max){
+//		max=c;
+//	}
+//	printf("%d is greatest among them",max);
+//	
+//	
+//}
+
+//-------------------------------print this pattern
+//*
+//* *
+//* * *
+//* * * * 
+//* * * * *
+
+//----------------------------------------Code ------
+//void pattern1(int n){
+//	for(int row=1;row<=n;row++)
+//	{
+//		for(int col=1; col<=row;col++)
+//		{
+//			printf("* ");
+//		}
+//		printf("\n");
+//	}
+//}
+//void main(){
+//	pattern1(5);
+//}
+
+
+
+//-------------------------------------print this pattern--------------------
+//*
+//* *
+//* * *
+//* * * * 
+//* * * * *
+//* * * * 
+//* * * 
+//* *
+//* 
+
+//---------------------------------------code----------------------------------
+
+void pattern2(int n){
+	for(int row=0;row<2*n;row++){
+		int c= row>n? 2*n-row : row ;
+				
+		for(int col=0;col<c;col++){
+			printf("* ");
+			
+		}
+		printf("\n");
+		
+	}
+	
+}
+
+void main(){
+	pattern2(5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
