@@ -729,36 +729,239 @@
 
 //---------------------------------------code----------------------------------
 
-void pattern2(int n){
-	for(int row=0;row<2*n;row++){
-		int c= row>n? 2*n-row : row ;
-				
-		for(int col=0;col<c;col++){
-			printf("* ");
-			
+//void pattern2(int n){
+//	for(int row=0;row<2*n;row++){
+//		int c= row>n? 2*n-row : row ;
+//				
+//		for(int col=0;col<c;col++){
+//			printf("* ");
+//			
+//		}
+//		printf("\n");
+//		
+//	}
+//	
+//}
+//
+//void main(){
+//	pattern2(5);
+//}
+
+
+
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+//int main() {
+//
+//    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+//    int n,x;
+//    scanf("%d",&n);
+//    printf("%d",fact(n));
+//    return 0;
+//}
+//
+//int fact(x){
+//    if(x==1){
+//        return 1;
+//    }else{
+//        return x*fact(x-1);
+//    }
+//}
+
+
+
+
+
+
+
+
+
+
+
+//int main(){
+//	int a,y;
+//	scanf("%d",&a);
+//	y=scanf("%d",&y);
+//	switch(a){
+//		case 1:
+//		 printf("Thiss is one");
+//		 break;
+//		case 2:
+//		 printf("THis is two");
+//		 break;
+//		case 3:
+//			switch(y){
+//				case 3:
+//					printf("Hurraeye");
+//					break;
+//			}
+//		break;
+//		 printf("THis is something else");
+//	}
+//	return 0;
+//}
+
+
+
+//-----22/2/2023--------LECTURE Day8--------LECTURE Day8--------LECTURE Day8--------LECTURE Day8--------LECTURE Day8--------LECTURE Day8--
+
+//int main(){
+//	int a;
+//	printf("Enter number: ");
+//	scanf("%d",&a);
+//	for(int i=1;i<=10;i++){
+//		printf("%d x %d = %d\n",a,i,(a*i));
+//	}
+//	return 0;
+//}
+
+
+//---------------------factorial of num using loop-----------------------------------------------------------------------------------
+//int main(){
+//	int n,i,fact=1;
+//	printf("Enter number: ");
+//	scanf("%d",&n); 
+//	for(i=n;i>1;i--){
+//		fact=fact*i;
+////		printf("factorial of %d is %d\n",n,fact);
+//	}
+//	printf("factorial of %d is %d\n",n,fact);
+//	return 0;
+//}
+
+
+//------------------------factorial with recursion-----------------------------------------------------------------
+//
+//int fact(int n){
+//	if(n==1 || n==0){
+//		return 1;
+//	}
+//	else{
+//		return n*fact(n-1);
+//	}
+//	return n;
+//}
+//
+//int main(){
+//	int n;
+//	printf("enter number: ");
+//	scanf("%d",&n);
+//	printf("factorial is : %d",fact(n));
+//	return 0;	
+//}
+
+
+
+//---------------------------Semicolon before body of for-------------------------------------------------
+//int main(){
+//	int i;
+//	for(i=1;i<=10;i++);
+//	{
+//		printf("%d\n",i);
+//	}
+//	return 0;
+//}
+//OUTPUT --> 11
+
+
+
+//int main(){
+//	int i,n,sum=0;
+//	printf("Enter number: ");
+//	scanf("%d",&n);
+//	for(i=1;i<=n;i++)
+//	{
+//		sum+=i;
+//	}
+//	printf("Sum of %d numbers: %d",n,sum);
+//	return 0;
+//}
+
+//--------------------------------------------While loop---------------------------------------------
+
+//int main(){
+//	int i=0;
+//	while(i<5){
+//		printf("LPU\n");
+//		i++;
+//	}
+//	return 0;
+//}
+
+
+//int main(){
+//	int number,n,sum=0;
+//	printf("Enter number: ");
+//	scanf("%d",&number);
+//	while(number>0){
+//		n=number%10;
+//		sum+=n;
+//		number =number/10;
+//	}
+//	printf("Sum of digits: %d",sum);
+//	return 0;
+//}
+
+
+//int main(){
+//	int i;
+//	for(i=1;i<10;i+=2);
+//	printf("Hello %d",i);
+//	return 0;
+//}
+
+//-------------------------------------NESTED LOOP--------------------------------------------------------
+
+//int main(){
+//	int row,col;
+//	for(row=0;row<5;row++){
+//		for(col=0;col<=row;col++){
+//			printf("* ");
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+int main(){
+	int row,col,n;
+	n=5;
+	for(row=n;row>=1;row--){
+		for(col=row;col>=1;col--){
+			printf("%d ",col);
 		}
 		printf("\n");
-		
 	}
 	
+	return 0;
 }
 
-void main(){
-	pattern2(5);
-}
+//int main(){
+//	int row,col,n;
+//	n=5;
+//	for(row=n;row>=1;row--){
+//		for(col=row;col>=1;col--){
+//			printf("%d ",row);
+//		}
+//		printf("\n");
+//	}
+//}
 
-
-
-
-
-
-
-
-
-
-
-
-
+//int main(){
+//	int row,col,n;
+//	n=5;
+//	for(row=n;row>=1;row--){
+//		for(col=row;col>=1;col--){
+//			printf("%d ",row);
+//		}
+//		printf("\n");
+//	}
+//}
 
 
 
