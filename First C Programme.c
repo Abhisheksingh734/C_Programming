@@ -1199,14 +1199,50 @@
 //	printf("%d",sizeof(void));
 //	return 0;
 //}
-int add(int a, int b){
-	return a+b;
-}
+//int add(int a, int b){
+//	return a+b;
+//}
+//
+//int main(){
+//	int a=5, b=4;
+//	printf("%d",add(a,b));
+//}
 
-int main(){
-	int a=5, b=4;
-	printf("%d",add(a,b));
-}
+
+
+//int main(){
+//	
+//
+//	int x= 10;
+//	char y ='a';
+//	x=x+y;
+////	printf("%d",x);
+//	float z=x+1.0;
+//	printf("%.2f",z);
+//	return 0;
+//}
+
+#include <stdio.h>
+
+//int main(){
+//    int x=10;
+//    char sum =x+1;
+//    printf("%d",sum);
+//    return 0;
+//}
+
+
+
+
+//    *
+//   * * 
+//  * * *
+// * * * * 
+//* * * * * 
+// * * * * 
+//  * * * 
+//   * * 
+//    * 
 
 
 
