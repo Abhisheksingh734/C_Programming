@@ -1232,17 +1232,114 @@
 //}
 
 
+//-----4/3/2023--------LECTURE --------LECTURE --------LECTURE --------LECTURE --------LECTURE --------LECTURE --------LECTURE --------LECTURE --------LECTURE --
+
+#include <stdio.h>
+//int main(){
+//	int a=5643;
+//	printf("%d \n",a);
+//	printf("#%d\n",a);
+//	printf("#%d#\n",a);
+//	printf("*%-6d*\n",a);
+//	printf("*%06d*\n",a);
+//	return 0;
+//}
 
 
-//    *
-//   * * 
-//  * * *
-// * * * * 
-//* * * * * 
-// * * * * 
-//  * * * 
-//   * * 
-//    * 
+//--------------------------------------getchar()-->takes 1 character---------------------------------------------------
+//int main(){
+//	char c;
+//	c = getchar();
+//	printf("You entered %c",c);
+//	return 0;
+//}
+
+//--------------------------------------putchar()-->prints 1 character---------------------------------------------------
+
+//int main(){
+//	char c;
+//	c= getchar();
+//	putchar(c);
+//	return 0;
+//}
+
+//int main(){
+//	char ch ='A';
+//	ch = getchar();
+//	putchar(ch);
+//	return 0;
+//}
+
+//--------------------------------------getche()-->accepts and display character---------------------------------------------------
+
+#include<stdio.h>
+#include<conio.h>
+//int main(){
+//	printf("Enter any charachter: ");
+//	getche();
+//	return 0;
+//}
+
+//--------------------------------------getch()-->accepts but does not display character---------------------------------------------------
+
+//int main(){
+//	char c;
+//	printf("Press any key to continue\n");
+//	c=getch();
+//	printf("You Pressed\n");
+//	putch(c);
+//	return 0;
+//}
+
+
+//---03/09/2023----LECTURE---------LECTURE---------LECTURE---------LECTURE---------LECTURE---------LECTURE---------LECTURE---------LECTURE------
+
+
+
+
+//int main(){
+//	char name[30];
+//	scanf("%s",&name);
+//	printf("name is= %s",name);
+//	return 0;
+//}
+//---> INPUT abhishek singh
+//--->OUTPUT abhishek 
+
+
+//---------------------------------------- USE gets to print whole string----------------------------------------------------------
+//int main(){
+//	char name[30];
+//	gets(name);
+//	printf("name is= %s",name);
+//	return 0;
+//}
+
+//INPUT --->abhishek singh
+//OUTPUT--->abhishek singh
+
+
+//---------------------------------------------------------FUNCTIONS------------------------------------------------------------------------
+
+
+//----function prototype---------------------------------
+
+//int add(int a, int b);
+
+//----function definition--------------------------------
+
+int main(){
+	printf("%d",add(3,4));
+	return 0;
+}
+
+float add(int a ,int b){
+	return a+b;
+}
+
+
+
+
 
 
 
