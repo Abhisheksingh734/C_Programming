@@ -1328,19 +1328,274 @@
 
 //----function definition--------------------------------
 
+//int main(){
+//	printf("%d",add(3,4));
+//	return 0;
+//}
+//
+//int add(int a ,int b){
+//	return a+b;
+//}
+
+
+
+//-------------------------MUltiplication of two numbers using function( 1 with RT and with parameters)
+#include<stdio.h>
+//int multiply(int a ,int b);
+//int main(){
+//	int a,b;
+//	scanf("%d %d",&a,&b);
+//	printf(" multiplication is %d",multiply(a,b));
+//	return 0;
+//}
+//
+//int multiply(int a ,int b){
+//	return (a*b);
+//}
+
+
+
+//int main(){
+//	int a=3;
+//	for(;a>0;){
+//		printf("%d",a);
+//	}
+//	a++;
+//}
+
+
+//--------------------------MUltiplication of two numbers using function( 2 with RT and without parameters)
+
+//-------function prototype below
+//int multiply();
+//
+////-------function description
+//int main(){ 
+//	printf("%d",multiply());
+//	return 0;
+//}
+//
+//int multiply(){
+//	int a=30,b=40;
+//	return a*b;
+//}
+
+
+
+//
+//int square();
+//
+//int main(){
+//	printf("%d",square());
+//	return 0;
+//}
+//int square(){
+//	int a=5;
+//	return (a*a);
+//}
+
+//--------------------------MUltiplication of two numbers using function( 3 without RT and without parameters)
+
+//void multiply();
+//
+//int main(){
+//	multiply();
+//	return 0;
+//}
+//void multiply(){
+//	int a,b;
+//	scanf("%d %d",&a,&b);
+//	printf("multplication is : %d ",(a*b));
+//}
+
+//--------------------------MUltiplication of two numbers using function( 3 without RT and with parameters)
+
+////------function prototype
+//void multiply(int a,int b);
+//
+//
+//int main(){
+//	int a,b;
+//	scanf("%d %d",&a,&b);
+//	multiply(a,b);
+//	return 0;
+//}
+////------fucntion definition
+//void multiply(int a,int b){
+//	printf("multiplication is : %d",(a*b));
+//	
+//}
+
+
+
+//exg--->
+
+//void add(int a, int b);
+//int main(){
+//	add(5,7);
+//	return 0;
+//}
+//void add(int a, int b){
+//	printf("Addition : %d",(a+b));
+//	
+//}
+
+//int main(){
+//	int i=10;
+//	printf("Value of i= %d\n",i);
+//	printf("address of i= %d\n",&i);
+//	return 0;
+//}
+
+
+
+
+//---03/10/2023----LECTURE---------LECTURE---------LECTURE---------LECTURE---------LECTURE---------LECTURE---------LECTURE---------LECTURE------
+
+//---------------------Recursion Finctions----------------------------------------------------------------
+
+
+//int fact(int a);// function prototype
+//
+//int main(){
+//	int n,result;
+//	printf("Enter number: ");
+//	scanf("%d",&n);
+//	result = fact(n);
+//	printf("Factorial of %d is: %d",n,result);
+//	return 0;
+//	
+//}
+//
+//int fact(int n) // function definition
+//{
+//	if (n==1){
+//		return 1;
+//	}
+//	else{
+//		return n*fact(n-1);
+//	}
+//}
+
+
+
+
+//----------------------------------swapping number--------------------------------------------
+
+#include <stdio.h>
+//int a=10;
+//void display();
+//int main()
+//{
+//	int b = 20;
+//	printf("a = %d ",a);
+//	printf("b = %d ",b);
+//	display();
+//}
+//
+//void display()
+//{
+//	int a=5;
+//	printf("a = %d",a);
+//}
+
+#include<stdio.h>
+
+//void swap(int a, int b);
+//
+//int main()
+//{
+//    int x, y;
+//    
+//    printf("Enter the value of x and y: ");
+//    scanf("%d %d", &x, &y);
+//    
+//    printf("Before swapping: x = %d, y = %d\n", x, y);
+//    
+//    swap(x, y);
+//    
+//    printf("After swapping: x = %d, y = %d\n", x, y);
+//    
+//    return 0;
+//}
+//
+//void swap(int a, int b)
+//{
+//    int temp;
+//    
+//    temp = a;
+//    a = b;
+//    b = temp;
+//    
+//    printf("Inside the function: a = %d, b = %d\n", a, b);
+//}
+
+
+//
+//#include<stdio.h>
+//
+//void swap(int *a, int *b);
+//
+//int main()
+//{
+//    int x, y;
+//    
+//    printf("Enter the value of x and y: ");
+//    scanf("%d %d", &x, &y);
+//    
+//    printf("Before swapping: x = %d, y = %d\n", x, y);
+//    
+//    swap(&x, &y);
+//    
+//    printf("After swapping: x = %d, y = %d\n", x, y);
+//    
+//    return 0;
+//}
+//
+//void swap(int *a, int *b)
+//{
+//    int temp;
+//    
+//    temp = *a;
+//    *a = *b;
+//    *b = temp;
+//    
+//    printf("Inside the function: a = %d, b = %d\n", *a, *b);
+//}
+
+
+
+//---03/13/2023----LECTURE---------LECTURE---------LECTURE---------LECTURE---------LECTURE---------LECTURE---------LECTURE---------LECTURE------
+
+//void display();
+//int a=20;
+//int main(){
+//	printf("a = %d\n",a);
+//	
+//	display();
+//	return 0;
+//}
+//
+//void display(){
+//	int a=60;
+//	printf("a =%d\n",a);
+//}
+
+#include<stdio.h>
+
+void first();
 int main(){
-	printf("%d",add(3,4));
+	extern int x; // declaration in main()
+	printf("\nx=%d",x); // x os used before its defenition[Possible because of extern]
+	first();
+	printf("\nx=%d",x); //Changes done by first are visiblee here 
 	return 0;
 }
-
-float add(int a ,int b){
-	return a+b;
+void first()
+{
+	extern int x;
+	printf("\nx=%d",x); // x is used again before its definition [ossible because of extern ]
+	x =x+10;
 }
-
-
-
-
-
-
-
+int x =10; // definition of external variable, here x is gloabla variable
 
