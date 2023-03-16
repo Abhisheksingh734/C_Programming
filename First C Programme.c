@@ -351,7 +351,8 @@
 //		printf("%d divisible by 5",a);
 //	}else{
 //		printf("%d not divisible by 5",a);
-//	}	
+//	}
+//}
 //
 ////	switch (6-a){
 ////		case 0:
@@ -414,7 +415,7 @@
 //	}
 //}
 
-
+//
 //int main(){
 //	
 //	int day;
@@ -425,6 +426,7 @@
 //			printf("Sunday");
 //			break;
 //		case 1:
+//			
 //			printf("Monday");
 //			break;
 //		case 2:
@@ -1120,10 +1122,10 @@
 //int main(){
 //	int i=1;
 //	do{
-//		printf("Hello\n",i);
+//		printf("Hello %d\n",i);
 //		i++;
 //	}
-//	while(i<5);
+//	while(i>5);
 //}
 
 
@@ -1282,14 +1284,14 @@
 
 //--------------------------------------getch()-->accepts but does not display character---------------------------------------------------
 
-//int main(){
-//	char c;
-//	printf("Press any key to continue\n");
-//	c=getch();
+int main(){
+	char c;
+	printf("Press any key to continue\n");
+	getch();
 //	printf("You Pressed\n");
 //	putch(c);
-//	return 0;
-//}
+	return 0;
+}
 
 
 //---03/09/2023----LECTURE---------LECTURE---------LECTURE---------LECTURE---------LECTURE---------LECTURE---------LECTURE---------LECTURE------
@@ -1581,21 +1583,63 @@
 //	printf("a =%d\n",a);
 //}
 
-#include<stdio.h>
+//#include<stdio.h>
+//
+//void first();
+//int main(){
+//	extern int x; // declaration in main()
+//	printf("\nx=%d",x); // x os used before its defenition[Possible because of extern]
+//	first();
+//	printf("\nx=%d",x); //Changes done by first are visiblee here 
+//	return 0;
+//}
+//void first()
+//{
+//	extern int x;
+//	printf("\nx=%d",x); // x is used again before its definition [ossible because of extern ]
+//	x =x+10;
+//}
+//int x =10; // definition of external variable, here x is gloabla variable
 
-void first();
-int main(){
-	extern int x; // declaration in main()
-	printf("\nx=%d",x); // x os used before its defenition[Possible because of extern]
-	first();
-	printf("\nx=%d",x); //Changes done by first are visiblee here 
-	return 0;
-}
-void first()
-{
-	extern int x;
-	printf("\nx=%d",x); // x is used again before its definition [ossible because of extern ]
-	x =x+10;
-}
-int x =10; // definition of external variable, here x is gloabla variable
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//#include<stdio.h>
+//
+//int main()
+//{
+////	float a=5;
+////	printf("Thi is an integer: %f",a);
+////	return 0;
+//
+////	char s[10]="Abhishek singh";
+////	printf("thi si %s",s);
+////	return 0;
+//	int result, a =5,b;
+////	result = a%-b;
+////	printf("Result is : %d",result);
+////	return 0;
+////	b=++a;
+////	printf("%d %d",b,a);
+//	printf("size %d",sizeof(a));
+//}
