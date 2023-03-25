@@ -1643,3 +1643,23 @@ int main(){
 ////	printf("%d %d",b,a);
 //	printf("size %d",sizeof(a));
 //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
