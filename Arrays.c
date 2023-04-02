@@ -360,53 +360,97 @@
 
 //--------------------------Binary Search--------------------------------------------------------------------------------------------
 
+//int main()
+//{
+//	int arr[100],i,size,start,end,mid,target,loc =-1;
+//	printf("Enter array size");
+//	scanf("%d",&size);
+//	printf("Enter element of array\n");
+//	for(i=0;i<size;i++)
+//	{
+//		scanf("%d",&arr[i]);
+//	}
+//	
+//	start =0;
+//	end= size-1;
+//	
+//	printf("enter element to search: ");
+//	scanf("%d",&target);
+//	
+//	while (start<=end)
+//	{
+//		mid = (start +end)/2;
+//		if(arr[mid]==target)
+//		{
+//			loc = mid;
+//			break;
+//		}
+//		else if(target>arr[mid])
+//		{
+//			end =mid-1;
+//		}
+//		else if(target<arr[mid])
+//		{
+//			start = mid;
+//		}
+//	}
+//	if(loc!=-1)
+//	{
+//		printf("element found at %d", loc);
+//	}else{
+//		printf("Element not found");
+//	}
+//}
+
+
+
+//-->30/3-------------------Binary Search with recursion-----------------------
+
+//int binarySearch(arr[],target,start,end);
+int binarySearch(int arr[],int target,int start,int end)
+{
+	if(start>end){
+		return -1;
+	}
+	int mid = start + (end-start)/2;
+	
+	if(target==arr[mid]){
+		return mid;
+	}
+	
+	if(target>arr[mid]){
+		binarySearch(arr,target,mid+1,end);
+	}
+	if(target<arr[mid])
+	{
+		binarySearch(arr,target,start,mid-1);
+	}
+}
+
+
 int main()
 {
-	int arr[100],i,size,start,end,mid,target,loc =-1;
-	printf("Enter array size");
+	int arr[100],target,size;
+	printf("Enter size of an array: ");
 	scanf("%d",&size);
-	printf("Enter element of array\n");
-	for(i=0;i<size;i++)
+	printf("Enter elements: \n");
+	for(int i=0;i<size;i++)
 	{
 		scanf("%d",&arr[i]);
 	}
 	
-	start =0;
-	end= size-1;
-	
-	printf("enter element to search: ");
+	printf("\nEnter value to be searched: ");
 	scanf("%d",&target);
 	
-	while (start<=end)
-	{
-		mid = (start +end)/2;
-		if(arr[mid]==target)
-		{
-			loc = mid;
-			break;
-		}
-		else if(target>arr[mid])
-		{
-			end =mid-1;
-		}
-		else if(target<arr[mid])
-		{
-			start = mid;
-		}
-	}
-	if(loc!=-1)
-	{
-		printf("element found at %d", loc);
-	}else{
-		printf("Element not found");
-	}
+	printf("Index of %d is : %d ",target,binarySearch(arr,target,0,size-1));
 }
 
-//
-//int BinarySearch(arr,target,end,mid)
-//{
-//	
-//}
+
+
+
+
+
+
 
 
 
