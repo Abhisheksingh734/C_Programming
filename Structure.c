@@ -233,18 +233,187 @@
 //----------------WAP pointer to a structure--------------------------------
 
 #include<stdio.h>
-struct car{
-	char name[60];
-	int seats;
-	float price;
-};
+//struct car{
+//	char name[60];
+//	int seats;
+//	float price;
+//};
+//
+//int main(){
+//	
+//	struct car mycar = { "BMW",2,999999},*ptr;
+//	ptr = &mycar;
+//	printf("Car name =%s\nSeats =%d\nPrice =%.1f",ptr->name, ptr->seats,ptr->price );
+//	return 0;
+//}
+
+
+
+
+
+
+
+//-->4/6/2023--------------------------------Structure-------------------------------------------------------------------------------------
+
+//   WAP to create a structure patient
+
+
+#include<stdio.h>
+
+//struct Patient{
+//	char name[30];
+//	char disease[20];
+//	int wardNo;
+//	float expenses;
+//};
+//
+//int main()
+//{
+//	int size;
+//	printf("Enter number of patient: ");
+//	scanf("%d",&size);
+//	struct Patient p[100];
+//	for(int i=0;i<size;i++){
+//		printf("Enter %d patient name ",i+1);
+//		scanf("%s",p[i].name);
+//		printf("Enter disease ");
+//		scanf("%s",p[i].disease);
+//		printf("Enter Ward No :");
+//		scanf("%d",&p[i].wardNo);
+//		printf("Enter Total expenses: ");
+//		scanf(" %f",&p[i].expenses);
+//	}
+//
+//	for(int i=0;i<size;i++){
+//		printf("\nPatient(%d) Name: %s\nDisease: %s\nWard.NO: %d\nTotal Expenses: %f\n********************\n",i+1,p[i].name,p[i].disease,p[i].wardNo,p[i].expenses);
+//
+//	}
+//	return 0;
+//}
+
+
+//#include<stdio.h>
+//
+//struct car {
+//	char name[30];
+//	int seats;
+//	float price;
+//	
+//};
+//
+//int main(){
+//	struct car c;
+//	printf("Enter name: ");
+//	scanf("%s",&c.name);
+//	printf("Enter seats: ");
+//	scanf("%d",&c.seats);
+//	printf("Enter price: ");
+//	scanf("%f",&c.price);
+//	
+//	
+//	printf("\n******Display details******\n");
+//	printf("\nCar name is = %s\nSeats are = %d\nPrice = %f\n",c.name,c.seats,c.price);
+//	
+//	return 0;
+//}
+
+//------------------------------------------UNION-------------------------------------------------------------------------
+
+
+
+
+#include<stdio.h>
+//
+//union car {
+//	char name[30];
+//	int seats;
+//	float price;
+//	
+//};
+//
+//int main(){
+//	union car c;
+//	printf("Enter name: ");
+//	scanf("%s",&c.name);
+//	printf("Car name is = %s\n",c.name);
+//	printf("Enter seats: ");
+//	scanf("%d",&c.seats);
+//	printf("Seats are = %d\n",c.seats);
+//	printf("Enter price: ");
+//	scanf("%f",&c.price);
+//	printf("Price = %f\n",c.price);
+//	
+//	
+////	printf("\n******Display details******\n");
+////	printf("\nCar name is = %s\nSeats are = %d\nPrice = %f\n",c.name,c.seats,c.price);
+//	
+//	return 0;
+//}
+
+
+//union saves the memory
+
+
+
+#include <stdio.h>
+
+//struct Address{
+//    char city[50];
+//    char state[50];
+//    int pincode;
+//};
+//
+//struct dob{
+//	int dd;
+//	int mm;
+//	int yyyy;
+//};
+//
+//struct Person{
+//    char name[50];
+//    int age;
+//    struct Address add;
+//    struct dob birthday;
+//};
+//
+//int main(){
+//    struct Person p1={"abhishek",19,{"jalandhar","punjab",1221},{20,3,2003}};
+//	printf("%s %d %s %s %d %d %d %d ",p1.name,p1.age,p1.add.city,p1.add.state,p1.add.pincode,p1.birthday.dd,p1.birthday.mm,p1.birthday.yyyy);    
+//    return 0;
+//}
+
+struct Employee{
+	char name[20];
+	int ssn;
+	int salary;
+	struct dob{
+		int dd;
+		int mm;
+		int yyyy;
+	}db[10];
+}emp[10];
 
 int main(){
+	int size;
+	printf("Enter number of employees data to fetch: ");
+	scanf("%d",&size);
 	
-	struct car mycar = { "BMW",2,999999},*ptr;
-	ptr = &mycar;
-	printf("Car name =%s\nSeats =%d\nPrice =%.1f",ptr->name, ptr->seats,ptr->price );
-	return 0;
+	for(int i=0;i<size;i++){
+		printf("Enter name of %d employee: ",i+1);
+		scanf("%s",&emp[i].name);
+		printf("Enter ssn: ");
+		scanf("%s",&emp[i].ssn);
+		printf("Enter salary: ");
+		scanf("%d",&emp[i].salary);
+		printf("Enter date of birth in format [dd mm yyyy]: ");
+		scanf("%s %d %d %d %d %d",&emp[i].db[i].dd,&emp[i].db[i].mm,&emp[i].db[i].yyyy);
+		
+		for(int i=0;i<size;i++){
+			printf("Details of Employee(%d)\n",i+1);
+			printf("name = %s ssn = %d salary = %d dateOfBirth = %d/%d/%d\n",emp[i].name,emp[i].ssn,emp[i].salary,emp[i].db[i].dd,emp[i].db[i].mm,emp[i].db[i].yyyy);
+		}
+	}
 }
+
 
 
