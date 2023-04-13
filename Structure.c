@@ -382,38 +382,40 @@
 //    return 0;
 //}
 
-struct Employee{
-	char name[20];
-	int ssn;
-	int salary;
-	struct dob{
-		int dd;
-		int mm;
-		int yyyy;
-	}db[10];
-}emp[10];
+//struct Employee{
+//	char name[20];
+//	int ssn;
+//	int salary;
+//	struct dob{
+//		int dd;
+//		int mm;
+//		int yyyy;
+//	}db[10];
+//}emp[10];
+//
+//int main(){
+//	int size;
+//	printf("Enter number of employees data to fetch: ");
+//	scanf("%d",&size);
+//	
+//	for(int i=0;i<size;i++){
+//		printf("Enter name of %d employee: ",i+1);
+//		scanf("%s",&emp[i].name);
+//		printf("Enter ssn: ");
+//		scanf("%s",&emp[i].ssn);
+//		printf("Enter salary: ");
+//		scanf("%d",&emp[i].salary);
+//		printf("Enter date of birth in format [dd mm yyyy]: ");
+//		scanf("%s %d %d %d %d %d",&emp[i].db[i].dd,&emp[i].db[i].mm,&emp[i].db[i].yyyy);
+//		
+//		for(int i=0;i<size;i++){
+//			printf("Details of Employee(%d)\n",i+1);
+//			printf("name = %s ssn = %d salary = %d dateOfBirth = %d/%d/%d\n",emp[i].name,emp[i].ssn,emp[i].salary,emp[i].db[i].dd,emp[i].db[i].mm,emp[i].db[i].yyyy);
+//		}
+//	}
+//}
 
-int main(){
-	int size;
-	printf("Enter number of employees data to fetch: ");
-	scanf("%d",&size);
-	
-	for(int i=0;i<size;i++){
-		printf("Enter name of %d employee: ",i+1);
-		scanf("%s",&emp[i].name);
-		printf("Enter ssn: ");
-		scanf("%s",&emp[i].ssn);
-		printf("Enter salary: ");
-		scanf("%d",&emp[i].salary);
-		printf("Enter date of birth in format [dd mm yyyy]: ");
-		scanf("%s %d %d %d %d %d",&emp[i].db[i].dd,&emp[i].db[i].mm,&emp[i].db[i].yyyy);
-		
-		for(int i=0;i<size;i++){
-			printf("Details of Employee(%d)\n",i+1);
-			printf("name = %s ssn = %d salary = %d dateOfBirth = %d/%d/%d\n",emp[i].name,emp[i].ssn,emp[i].salary,emp[i].db[i].dd,emp[i].db[i].mm,emp[i].db[i].yyyy);
-		}
-	}
-}
+
 
 
 
