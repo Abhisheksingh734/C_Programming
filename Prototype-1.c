@@ -15,7 +15,7 @@ int main() {
     User users[MAX_USERS];
     int num_users = 0;
 
-    FILE *file = fopen("users.txt", "r");
+    FILE *file = fopen("users.txt", "r+");
     if (file) {
         char line[200];
         while (fgets(line, sizeof(line), file)) {
@@ -39,14 +39,14 @@ int main() {
 
     if (choice == 's') {
         char username[50];
-        printf("Enter your username: ");
+        printf("\nEnter your username: ");
         scanf("%s", username);
 
         int found_user = 0;
         for (i =0;i<num_users;i++) {
             if (strcmp(username, users[i].username) == 0) {
                 found_user = 1;
-                printf("Welcome back, %s.\n", username);
+                printf("Welcome back, %s.:)\n", username);
                 printf("Your device model is %s.\n", users[i].device_model);
                 printf("Order has been carried out. Please collect your device.\n");
                 break;
@@ -54,7 +54,7 @@ int main() {
         }
 
         if (!found_user) {
-            printf("No such user was found in the database.\n");
+            printf("No such user was found in the database. :(\n");
         }
     } else if (choice == 'n') {
         char username[50];
@@ -66,6 +66,7 @@ int main() {
             if (strcmp(username, users[i].username) == 0) {
                 found_user = 1;
                 printf("A user with that username already exists.\n");
+                return 0;
                 break;
             }
         }
