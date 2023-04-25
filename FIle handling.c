@@ -313,24 +313,83 @@
 
 #include<stdio.h>
 #include<stdlib.h>
+//
+//int main(){
+//	FILE *fp;
+//	char temp,name[20];
+//	
+//	fp =fopen("xy.txt","r+");
+//	while((temp=getc(fp))!=EOF)
+//	{
+//		if(temp=='x')
+//		{
+//			fseek(fp,-1,1);
+//			putc('y',fp);
+//			fseek(fp,-1,1);			
+//		}
+//	}
+//	fclose(fp);
+//	return 0;
+//}
 
-int main(){
-	FILE *fp;
-	char temp,name[20];
-	
-	fp =fopen("xy.txt","r+");
-	while((temp=getc(fp))!=EOF)
-	{
-		if(temp=='x')
-		{
-			fseek(fp,-1,1);
-			putc('y',fp);
-			fseek(fp,-1,1);			
-		}
-	}
-	fclose(fp);
-	return 0;
+
+
+
+
+
+
+//----------WAP to implement functions fseek(), ftell(), rewind()
+
+
+
+
+#include<stdio.h>
+#include<stdio.h>
+
+//
+//int main(){
+//	
+//	FILE *fp;
+//	char str[12];
+//	char ch;
+//	fp=fopen("text.txt","r");
+//	fseek(fp,-4,SEEK_END);
+//	ch = fgetc(fp);
+//	printf("\n%d",ftell(fp));
+//	fscanf(fp,"%s",str);
+//	printf("%s",str);
+////printf("%s",ch);
+//	printf("\n%d",ftell(fp));
+//	
+//	fclose(fp);
+//	
+//	return 0;
+//}
+
+
+#include <stdio.h>
+
+int main()
+{
+FILE *fp;
+char str[12];
+fp = fopen("test.txt", "r");
+
+// Moving pointer to end
+fseek(fp, -4, SEEK_END);
+fscanf(fp,"%s",str);
+printf("\n%s",str);
+// Printing position of pointer
+printf("\n%ld", ftell(fp));
+rewind(fp);
+fseek(fp, 2, SEEK_SET);
+fscanf(fp,"%s",str);
+printf("%s",str);
+
+fgets(str,12,fp);
+printf("\n%s",str);
+printf("\n%d",ftell(fp));
+return 0;
 }
-
 
 
