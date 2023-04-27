@@ -14,6 +14,11 @@
 //strncmp ---> Compares upto n characters of string s1 to string s2
 //stricmp ---> Compares the strings (ignore case)
 
+//------------------STRING CONVERSION FUNCTIONS-----------------------------------------------
+//atof(Char *nptr) - convert string to double
+//atoi(Char *nptr) - convert string into integer
+//atol(Char *nptr) - convert string to ling integer
+//itoa(int n) - convert integer value to string
 
 
 #include<stdio.h>
@@ -80,14 +85,73 @@
 //}
 
 //WAP to convert string in reverse order
+#include<string.h>
+//void reverse(char *str){
+//	if(str==NULL || *str=='\0'){
+//		printf("Invalid string");
+//		return ;
+//	}
+//	int len = strlen(str);
+//	char *i1 =str,*i2=str+len-1;
+//	while(i1<i2){
+//	
+//	char temp = *i1;
+//	*i1=*i2;
+//	*i2=temp;
+//	i1++;
+//	i2--;	
+//}
+//}
+//int main(){
+//	char str[10]="Abhishek";
+//	reverse(str);
+//	printf("%s",str);
+//}
+
+
+//int main(){
+//	char s1[]="Abhishek",s2[]="Abhishek";
+//	int l1=strlen(s1);
+//	int l2=strlen(s2);
+//	if(l1>l2){
+//		for(int i=0;i<l1;i++){
+//			if(s1[i]!=s2[i]){
+//				printf("Not equal");
+//				return ;
+//			}
+//		}
+//		printf("Equal");
+//		return ;
+//	}else if(l2>l1){
+//		for(int i=0;i<l2;i++){
+//			if(s1[i]!=s2[i]){
+//				printf("Not equal");
+//				return ;
+//			}
+//			printf("Equal");
+//			return;
+//		}
+//	}else{
+//		for(int i=0;i<l1;i++){
+//			if(s1[i]!=s2[i]){
+//				printf("Not equal");
+//				return ;
+//			}
+//			printf("Equal");
+//			return;
+//		}
+//	}
+//	
+//	
+//}
+
 
 int main(){
-	char s1[20]="Reverse it",s2[20];
-	int i=0,count=0;
-	while(s1[i]!='\0'){
-		s2[count-1]=s1[i];
-	}
-	printf("%s",s2);
+	
 }
+
+#include <stdio.h>
+#include <string.h>
+
 
 
