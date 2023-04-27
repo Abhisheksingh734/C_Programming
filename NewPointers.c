@@ -182,28 +182,86 @@
 //}
 
 
+//int main(){
+//	int arr[]={10,20,30,40,50};
+//	int i;
+//	int *p;
+//	p=arr;
+//	printf("First value is %d\n",*p);
+//	p=p+1;
+//	printf("Second value is %d\n",*p);
+//	*p=45;
+//	p=p+2;
+//	*p=-2;
+//	printf("New array is :");
+//	for(int i=0;i<5;i++){
+//		printf("%d, ",arr[i]);
+//	}	
+//	p=arr;
+//	*(p+1)=0;
+//	*(p-1)=1;
+//	printf("\nModified array is :");
+//	for(int i=0;i<5;i++){
+//		printf("%d, ",arr[i]);
+//	}
+//}
+
+//int main(){
+//	
+//	int arr[]={10,20,30,40,50,60,70};
+//	int *ptr =arr;
+////	printf()
+//	for(int i=0;i<7;i++){
+//		printf("%d\n",*(ptr+i));
+//	}
+//	printf("Addresses are: ");
+//	for(int i=0;i<7;i++){
+//		printf("\n%d ",(ptr+i));
+//	}
+//	return 0;	
+//}
+
+
+
+//write a program to read and display elements of 1D array using pointer to an array
+
+
+//int main(){
+//	int i,n;
+//	int a[2];
+//	int *parr =a;
+//	printf("Enter number of elements: ");
+//	scanf("%d",&n);
+//	printf("Enter the elements: ");
+//	for(i=0;i<n;i++){
+//		scanf("%d",parr+i);
+//	}
+//	printf("Display elements \n");
+//	for(i=0;i<n;i++){
+//		printf("%d\n",*(parr+i));
+//	}
+//	
+//}
+
+//WAP to find the sum and mean of 1D array element using pointer to array
+
 int main(){
-	int arr[]={10,20,30,40,50};
-	int i;
-	int *p;
-	p=arr;
-	printf("First value is %d\n",*p);
-	p=p+1;
-	printf("Second value is %d\n",*p);
-	*p=45;
-	p=p+2;
-	*p=-2;
-	printf("New array is :");
-	for(int i=0;i<5;i++){
-		printf("%d, ",arr[i]);
-	}	
-	p=arr;
-	*(p+1)=0;
-	*(p-1)=1;
-	printf("\nModified array is :");
-	for(int i=0;i<5;i++){
-		printf("%d, ",arr[i]);
+	int n,sum=0,mean;
+	int a[2];
+	int *parr =a;
+	printf("Enter number of elements: ");
+	scanf("%d",&n);
+	printf("Enter the elements: ");
+	for(int i=0;i<n;i++){
+		scanf("%d",parr+i);
 	}
+	for(int i=0;i<n;i++){
+		sum+=*(parr+i);
+	}
+	printf("Sum of array is: %d\n",sum);
+	printf("Mean of array is: %d",(sum/n));
+	
+	
 }
 
 
